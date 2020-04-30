@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    color: #f2f2f2;
+    font-family: montserrat;
+
+}
+body{
+    background-color: gray;
+    c
+}
+nav{
+    background-color:#222222;
+    padding: 10px 40px 10px 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 500px;
+}
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+}
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+nav ul div.items a:hover{
+    color: cyan;
+    transition: .5s ease;
+}
+nav ul li.btn{
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+}
+nav ul li.btn span{
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav ul li.btn:hover span::before{
+    content: '\f00d' ;
+}
+@media screen and (max-width:1052px){
+    nav{
+        padding: 10px 40px 10px 0px;
+    }
+    nav ul li.logo{
+        display: none
+    }
+    nav ul div.items{
+        flex: 5;
+    }
+
+}@media screen and (max-width:800px){
+    nav ul li.btn{ 
+        display: block;
+    }
+    nav{
+        padding: 9px;
+    }
+}
+.portfolio{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 2% auto 0;
+    box-sizing: border-box;
+}
+.home-box{
+    margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+
+.home-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.skills-box{
+    margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+
+.skills-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.about-box{
+    margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+
+.about-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.contact-box{
+    margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+
+.contact-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.socialmedia-box{
+    margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+
+.socialmedia-box:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.portfolio:hover .active{
+    flex-basis: 0;
+}
